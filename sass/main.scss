@@ -1,0 +1,54 @@
+:root{
+  --width-desktop: 144rem;
+  --width-mobile: 37.5rem;
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grey: hsl(212, 45%, 89%);
+  --color-grey-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  --default-font-size: 1.5rem;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  width: var(--width-mobile);
+  background-color: var(--color-grey-blue);
+}
+
+.card{
+
+  &__img{
+
+  }
+
+  &__img-photo {
+
+  }
+
+  &__desc{
+
+  }
+  &__desc-title{
+
+  }
+
+  &__desc-detail {
+
+  }
+}
