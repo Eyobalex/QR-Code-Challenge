@@ -30,16 +30,21 @@ body {
   width: var(--width-desktop);
   background-color: var(--color-light-grey);
 
+  box-sizing: content-box;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  //height: 100vh;
+  min-height: 100vh;
   padding: 15.2rem 56rem;
+
+  @media only screen and (max-width: 660px) {
+    padding: 5.8rem 8.5rem;
+  }
   @media only screen and (max-width: 375px) {
     width: var(--width-mobile);
     padding: 2.8rem 8.5rem;
-
   }
 }
 
