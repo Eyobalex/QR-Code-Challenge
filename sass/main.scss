@@ -1,4 +1,4 @@
-:root{
+:root {
   --width-desktop: 144rem;
   --width-mobile: 37.5rem;
 
@@ -11,7 +11,7 @@
 }
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -21,34 +21,67 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-family: "Outfit", sans-serif;
   box-sizing: border-box;
 }
 
-.container{
-  width: var(--width-mobile);
-  background-color: var(--color-grey-blue);
+.container {
+  width: var(--width-desktop);
+  background-color: var(--color-light-grey);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //height: 100vh;
+  padding: 15.2rem 56rem;
+  @media only screen and (max-width: 375px) {
+    width: var(--width-mobile);
+    padding: 2.8rem 8.5rem;
+
+  }
 }
 
-.card{
+.card {
 
-  &__img{
+  width: 32rem;
+  height: 49.7rem;
+  background-color: var(--color-white);
+
+  border-radius: 2rem;
+  padding: 1.5rem;
+
+
+  &__img {
+    border-radius: 2rem;
+
 
   }
 
   &__img-photo {
+    border-radius: 2rem;
+
+    height: 28.8rem;
+    width: 28.8rem;
 
   }
 
-  &__desc{
+  &__desc {
 
   }
-  &__desc-title{
 
+  &__desc-title {
+    font-weight: 700;
+    text-align: center;
+    padding: 1.6rem;
   }
 
   &__desc-detail {
-
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.6rem;
+    color: var(--color-grey-blue);
   }
 }
